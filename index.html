@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APP WEB DJ COM IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  
+</head>
+<!-- adicionar o plano de fundo à página da web -->
+<body background="background.jpg">
+<center>
+	<!-- adicione a classe -->
+  	<h3 class="btn btn-warning heading">APP WEB DJ COM IA
+	    <br>
+		<!-- adicione uma classe à seção de observação -->
+	    <span class="note">OBSERVAÇÃO: Mova seu pulso esquerdo para cima e para baixo para controlar o volume.
+			 Mova seu pulso direito para controlar a velocidade.</span>
+  	</h3>
+<!-- crie uma div e dê uma class = “div_speed”. -->
+	<div class="div_speed">
+		<img src="disk.gif" class="div_speed_img">
+		<!-- Adicione uma tag br após a tag img -->
+		<br>
+		<h3 class="btn btn-danger" id="speed">Velocidade</h3>
+	</div>
+	<!--  criar uma div e dar uma class = “div_volume” -->
+	<div class="div_volume">
+		<!-- adicione uma tag img que conterá um gif -->
+		<img src="disk.gif" class="div_volume_img">
+		<!-- Adicione uma tag br após a tag img -->
+		<br>
+		<!-- tag de título -->
+		<h3 class="btn btn-danger" id="volume">Volume</h3>
+	</div>
+
+	<br><br>
+
+	<button onclick="play();" class="btn btn-success play_button">Reproduzir</button>
+
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
